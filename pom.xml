@@ -458,9 +458,9 @@
                 <artifactId>protobuf-maven-plugin</artifactId>
                 <version>${protobuf-maven-plugin.version}</version>
                 <configuration>
-                    <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}</protocArtifact>
+                    <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:windows-x86_64</protocArtifact>
                     <pluginId>grpc-java</pluginId>
-                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}</pluginArtifact>
+                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:windows-x86_64</pluginArtifact>
                 </configuration>
                 <executions>
                     <execution>
@@ -614,7 +614,7 @@
         </plugins>
     </reporting>
     
-    <repositories>
+    <!-- <repositories>
         <repository>
             <id>alfresco-maven-repo</id>
             <url>https://maven.alfresco.com/nexus/content/groups/public/</url>
@@ -639,7 +639,7 @@
                 <enabled>false</enabled>
             </releases>
         </repository>
-    </repositories>
+    </repositories> -->
     
     <url>http://shardingjdbc.io</url>
     <description>RDB Sharding</description>
